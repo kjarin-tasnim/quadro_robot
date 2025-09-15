@@ -1,17 +1,26 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
+from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
 import os
 
 def generate_launch_description():
-    urdf_loc = os.path.join(
-        get_package_share_directory('quadro_description'),
-        'urdf',
-        'Demo.urdf'
-    )
 
-    with open(urdf_loc, 'r') as infp:
-        robot_desc = infp.read()
+
+
+    robot_desc = Command(
+        [
+            PathJoinSubstitution([FindExecutable(name='xacro')]), 
+            ' ', 
+            PathJoinSubstitution(
+                [FindPackageShare('quadro_description'), 'urdf', 'quadro.urdf.xacro']
+            ), 
+            " ",
+            "prefix:=",
+            "",
+         ]
+    )
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',

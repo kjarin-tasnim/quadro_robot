@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="quadro">
+
+
+    <xacro:include filename="$(find quadro_description)/urdf/quadro_description.urdf.xacro"/>
+    <xacro:include filename="$(find quadro_description)/urdf/quadro.ros2_control.xacro"/>
+
+    <xacro:quadro parent="world" prefix="" >
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:quadro>
+    <xacro:quadro_ros2_control name="quadro" prefix="" />
+
+
+</robot> 
