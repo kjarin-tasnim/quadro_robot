@@ -5,6 +5,13 @@
     <xacro:include filename="$(find quadro_description)/urdf/quadro_description.urdf.xacro"/>
     <xacro:include filename="$(find quadro_description)/urdf/quadro.ros2_control.xacro"/>
 
+    <gazebo>
+        <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(find quadro_control)/config/controllers.yaml</parameters>
+            <!-- <controller_manager_name>controller_manager</controller_manager_name> -->
+        </plugin>
+    </gazebo>
+
     <xacro:quadro parent="world" prefix="" >
         <origin xyz="0 0 0" rpy="0 0 0" />
     </xacro:quadro>

@@ -16,9 +16,6 @@ def generate_launch_description():
             PathJoinSubstitution(
                 [FindPackageShare('quadro_description'), 'urdf', 'quadro.urdf.xacro']
             ), 
-            " ",
-            "prefix:=",
-            "",
          ]
     )
 
@@ -28,6 +25,7 @@ def generate_launch_description():
         output='screen',
         parameters=[{'robot_description': robot_desc}]
     )
+    
     # joint_state_publisher_node = Node(
     #     package='joint_state_publisher',
     #     executable='joint_state_publisher',
@@ -35,10 +33,12 @@ def generate_launch_description():
     #     output='screen',
     # )
 
+
+
     spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
-        arguments=['-topic', 'robot_description', '-name', 'quadro', '-allow_renaming', 'true', '-x', '0.0', '-y', '0.0', '-z', '0.5'],
+        arguments=['-topic', 'robot_description', '-name', 'quadro', '-allow_renaming', 'true', '-x', '0.0', '-y', '0.0', '-z', '0.8'],
         output='screen'
     )
 
@@ -46,5 +46,6 @@ def generate_launch_description():
     ld.add_action(robot_state_publisher_node)
     # ld.add_action(joint_state_publisher_node)
     ld.add_action(spawn_entity)
+    # ld.add_action(joint_trajectory_controller_spawner)
 
     return ld

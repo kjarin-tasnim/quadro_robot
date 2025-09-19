@@ -2,15 +2,20 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:macro name="quadro" params="parent prefix *origin">
+  
 
   <!-- Constants for robot dimensions -->
 
   <!-- Base Link -->
 
+  <link name="base_link">
+
+</link>
+
  <link name="Base-Body">
         <inertial>
             <origin xyz="-7.493020562650216e-16 -4.84842506995014e-16 0.05771131130384984" rpy="0.0 0.0 0.0" />
-            <mass value="25.91682581128143" />
+            <mass value="1.91682581128143" />
             <inertia ixx="0.7997201982029933" iyy="1.206821240279861" izz="1.846293564893905" ixy="-6.5797939896583456e-15" iyz="-8.547383638323425e-17" ixz="5.242219058711254e-16" />
         </inertial>
         <visual name="Base-Body_visual">
@@ -35,7 +40,7 @@
     <link name="Actuator-1">
         <inertial>
             <origin xyz="-3.9968028886505636e-16 -1.7763568394002506e-16 0.07768426014187582" rpy="0.0 -0.0 0.0" />
-            <mass value="19.077991723221682" />
+            <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466628592" iyy="0.10577974343263863" izz="0.054310757474580806" ixy="5.551115123125783e-17" iyz="2.220446049250313e-15" ixz="0.0" />
         </inertial>
         <visual name="Actuator-1_visual">
@@ -59,7 +64,7 @@
     <link name="Actuator-2">
         <inertial>
             <origin xyz="5.329070518200751e-17 -3.552713678800501e-17 0.07768426014187589" rpy="0.0 -0.0 0.0" />
-            <mass value="19.077991723221682" />
+            <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466628592" iyy="0.10577974343263774" izz="0.05431075747458092" ixy="5.551115123125783e-17" iyz="2.220446049250313e-15" ixz="1.1102230246251565e-16" />
         </inertial>
         <visual name="Actuator-2_visual">
@@ -81,7 +86,7 @@
     <link name="Actuator-3">
         <inertial>
             <origin xyz="-1.7763568394002505e-17 7.105427357601002e-17 0.07768426014187568" rpy="0.0 -0.0 0.0" />
-            <mass value="19.077991723221682" />
+            <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466629214" iyy="0.1057797434326413" izz="0.054310757474580806" ixy="0.0" iyz="0.0" ixz="1.1102230246251565e-16" />
         </inertial>
         <visual name="Actuator-3_visual">
@@ -103,7 +108,7 @@
     <link name="Actuator-4">
         <inertial>
             <origin xyz="-1.7763568394002505e-17 -7.105427357601002e-17 0.07768426014187568" rpy="0.0 -0.0 0.0" />
-            <mass value="19.077991723221682" />
+            <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466629214" iyy="0.1057797434326413" izz="0.054310757474580806" ixy="-5.551115123125783e-17" iyz="0.0" ixz="1.1102230246251565e-16" />
         </inertial>
         <visual name="Actuator-4_visual">
@@ -127,7 +132,7 @@
     <link name="upper-leg-1">
         <inertial>
             <origin xyz="-0.0349227234083768 0.020547382026482666 -0.04559883324274818" rpy="-2.189528850507527e-47 1.2154326714572545e-63 6.842277657836022e-49" />
-            <mass value="13.100857588170285" />
+            <mass value="1.100857588170285" />
             <inertia ixx="0.06465148006887686" iyy="0.12169393436924025" izz="0.1633221816047396" ixy="0.05133169967548328" iyz="0.01087298230174924" ixz="-0.018479928638119193" />
         </inertial>
         <visual name="upper-leg-1_visual">
@@ -149,7 +154,7 @@
 <link name="upper-leg-2">
         <inertial>
             <origin xyz="-0.0352559165208968 -0.019970274628070613 -0.04559883324293296" rpy="0.0 -1.2154326714572545e-63 -6.842277657836022e-49" />
-            <mass value="13.100857588155373" />
+            <mass value="1.100857588155373" />
             <inertia ixx="0.06297876485799389" iyy="0.1233666495886574" izz="0.163322181612584" ixy="-0.05036595710029217" iyz="-0.010567596510820206" ixz="-0.018656243209292257" />
         </inertial>
         <visual name="upper-leg-2_visual">
@@ -171,7 +176,7 @@
     <link name="upper-leg-3">
         <inertial>
             <origin xyz="0.020547382026482097 0.03492272340837815 -0.045598833242747966" rpy="0.0 -0.0 0.0" />
-            <mass value="13.100857588170285" />
+            <mass value="1.100857588170285" />
             <inertia ixx="0.12169393436921117" iyy="0.0646514800688931" izz="0.16332218160470413" ixy="-0.05133169967548612" iyz="0.018479928638120383" ixz="0.010872982301734394" />
         </inertial>
         <visual name="upper-leg-3_visual">
@@ -193,7 +198,7 @@
     <link name="upper-leg-4">
         <inertial>
             <origin xyz="-0.01742547713701903 -0.03658065424438789 -0.045598833242747966" rpy="0.0 -0.0 0.0" />
-            <mass value="13.100857588170285" />
+            <mass value="1.100857588170285" />
             <inertia ixx="0.1301742889471318" iyy="0.05617112549094383" izz="0.1633221816048973" ixy="-0.045599196696266164" iyz="-0.019357249778792916" ixz="-0.009220975415064496" />
         </inertial>
         <visual name="upper-leg-4_visual">
@@ -301,82 +306,98 @@
             </geometry>
         </collision>
     </link>
-    
-    <joint name="Base-Body_Revolute-41" type="revolute">
+
+    <!-- Joints -->
+    <joint name="base_link_to_Base-Body" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <parent link="base_link" />
+        <child link="Base-Body" />
+        
+    </joint>
+
+    <joint name="Base-Body_Revolute-41" type="continuous">
         <origin xyz="-0.275 -0.17500000000000002 0.08" rpy="-0.0 -1.5707963267948966 0" />
         <parent link="Base-Body" />
         <child link="Actuator-1" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-0.349066" upper="0.349066" effort="1000000" velocity="1000000" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="Actuator-1_Revolute-61" type="continuous">
         <origin xyz="0.0 -0.02 0.16" rpy="-1.5707963267948966 1.5707963267948966 0" />
         <parent link="Actuator-1" />
         <child link="upper-leg-1" />
-        <axis xyz="-2.465190328815662e-32 1.9721522630525293e-31 0.9999999999999999" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="Base-Body_Revolute-62" type="revolute">
+    <joint name="Base-Body_Revolute-62" type="continuous">
         <origin xyz="-0.275 0.17500000000000002 0.08" rpy="-0.0 -1.5707963267948966 0" />
         <parent link="Base-Body" />
         <child link="Actuator-2" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-0.349066" upper="0.349066" effort="1000000" velocity="1000000" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="Actuator-2_Revolute-63" type="continuous">
         <origin xyz="0.0 0.02 0.16" rpy="1.5707963267948966 1.5707963267948966 0" />
         <parent link="Actuator-2" />
         <child link="upper-leg-2" />
-        <axis xyz="2.465190328815662e-32 1.9721522630525295e-31 0.9999999999999999" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="Base-Body_Revolute-64" type="revolute">
+    <joint name="Base-Body_Revolute-64" type="continuous">
         <origin xyz="0.275 -0.17500000000000002 0.08" rpy="-3.141592653589793 -1.5707963267948966 0" />
         <parent link="Base-Body" />
         <child link="Actuator-3" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-0.349066" upper="0.349066" effort="1000000" velocity="1000000" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="Actuator-3_Revolute-65" type="continuous">
         <origin xyz="0.0 0.02 0.16" rpy="1.5707963267948966 -1.5707963267948966 0" />
         <parent link="Actuator-3" />
         <child link="upper-leg-3" />
-        <axis xyz="0.0 0.0 1.0" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="Base-Body_Revolute-66" type="revolute">
+    <joint name="Base-Body_Revolute-66" type="continuous">
         <origin xyz="0.275 0.17500000000000002 0.08" rpy="-3.141592653589793 -1.5707963267948966 0" />
         <parent link="Base-Body" />
         <child link="Actuator-4" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-0.349066" upper="0.349066" effort="1000000" velocity="1000000" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="Actuator-4_Revolute-67" type="continuous">
         <origin xyz="0.0 -0.02 0.16" rpy="-1.5707963267948966 -1.5707963267948966 0" />
         <parent link="Actuator-4" />
         <child link="upper-leg-4" />
-        <axis xyz="0.0 0.0 1.0" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="upper-leg-1_Revolute-68" type="continuous">
         <origin xyz="-0.30165959999999997 0.17748659 -0.06" rpy="-1.5707963267948948 -3.6977854932234934e-32 -6.162975822039155e-33" />
         <parent link="upper-leg-1" />
         <child link="lower-leg-1" />
-        <axis xyz="-1.232595164407831e-32 1.0 -1.8943180357666737e-15" />
+        <axis xyz="0 1 0" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="upper-leg-2_Revolute-69" type="continuous">
         <origin xyz="-0.30453768999999997 -0.17250158 -0.06" rpy="-1.570796326794895 2.4651903288156624e-32 5.97808654737798e-31" />
         <parent link="upper-leg-2" />
         <child link="lower-leg-2" />
-        <axis xyz="0.0 1.0 -1.5420775873054098e-15" />
+        <axis xyz="0 1 0" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="upper-leg-3_Revolute-70" type="continuous">
         <origin xyz="0.17748659000000003 0.30165959999999997 -0.06" rpy="-1.5707963267948948 -0.0 -5.390029534646783e-31" />
         <parent link="upper-leg-3" />
         <child link="lower-leg-3" />
-        <axis xyz="0.0 1.0 -1.894318035766673e-15" />
+        <axis xyz="0 1 0" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
     <joint name="upper-leg-4_Revolute-71" type="continuous">
         <origin xyz="-0.15051983 -0.31598067 -0.06" rpy="1.5707963267948986 1.3877787807814457e-17 4.930380657631324e-32" />
         <parent link="upper-leg-4" />
         <child link="lower-leg-4" />
-        <axis xyz="1.3877787807814457e-17 -1.0 1.894318035766673e-15" />
+        <axis xyz="0 1 0" />
+        <limit effort="99.0" velocity="99.0" />
     </joint>
 
   </xacro:macro>
