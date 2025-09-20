@@ -12,118 +12,118 @@
 
 </link>
 
- <link name="Base-Body">
+ <link name="base_body">
         <inertial>
             <origin xyz="-7.493020562650216e-16 -4.84842506995014e-16 0.05771131130384984" rpy="0.0 0.0 0.0" />
             <mass value="1.91682581128143" />
             <inertia ixx="0.7997201982029933" iyy="1.206821240279861" izz="1.846293564893905" ixy="-6.5797939896583456e-15" iyz="-8.547383638323425e-17" ixz="5.242219058711254e-16" />
         </inertial>
-        <visual name="Base-Body_visual">
+        <visual name="base_body_visual">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Base-Body.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/base_body.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="yellow">
                 <color rgba="0.8 0.8 0.0 1.0" />
             </material>
   
         </visual>
-        <collision name="Base-Body_collision">
+        <collision name="base_body_collision">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Base-Body.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/base_body.stl" scale="0.001 0.001 0.001" />
             </geometry>
             
         </collision>
     </link>
 
-    <link name="Actuator-1">
+    <link name="actuator_rear_right">
         <inertial>
             <origin xyz="-3.9968028886505636e-16 -1.7763568394002506e-16 0.07768426014187582" rpy="0.0 -0.0 0.0" />
             <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466628592" iyy="0.10577974343263863" izz="0.054310757474580806" ixy="5.551115123125783e-17" iyz="2.220446049250313e-15" ixz="0.0" />
         </inertial>
-        <visual name="Actuator-1_visual">
+        <visual name="actuator_rear_right_visual">
             <origin xyz="-4.263256414560601e-16 -3.1974423109204507e-16 0.23999999999999994" rpy="3.1415926535897887 5.3672300325485344e-17 3.141592653589793" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_rear_right.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
             </material>
         </visual>
-        <collision name="Actuator-1_collision">
+        <collision name="actuator_rear_right_collision">
             <origin xyz="-4.263256414560601e-16 -3.1974423109204507e-16 0.23999999999999994" rpy="3.1415926535897887 5.3672300325485344e-17 3.141592653589793" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_rear_right.stl" scale="0.001 0.001 0.001" />
             </geometry>
             
         </collision>
     </link>
    
-    <link name="Actuator-2">
+    <link name="actuator_rear_left">
         <inertial>
             <origin xyz="5.329070518200751e-17 -3.552713678800501e-17 0.07768426014187589" rpy="0.0 -0.0 0.0" />
             <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466628592" iyy="0.10577974343263774" izz="0.05431075747458092" ixy="5.551115123125783e-17" iyz="2.220446049250313e-15" ixz="1.1102230246251565e-16" />
         </inertial>
-        <visual name="Actuator-2_visual">
+        <visual name="actuator_rear_left_visual">
             <origin xyz="3.552713678800501e-17 -1.7763568394002506e-16 0.24" rpy="3.1415926535897887 5.36723003254851e-17 3.141592653589793" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-2.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_rear_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
             </material>
         </visual>
-        <collision name="Actuator-2_collision">
+        <collision name="actuator_rear_left_collision">
             <origin xyz="3.552713678800501e-17 -1.7763568394002506e-16 0.24" rpy="3.1415926535897887 5.36723003254851e-17 3.141592653589793" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-2.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_rear_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-    <link name="Actuator-3">
+    <link name="actuator_front_right">
         <inertial>
             <origin xyz="-1.7763568394002505e-17 7.105427357601002e-17 0.07768426014187568" rpy="0.0 -0.0 0.0" />
             <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466629214" iyy="0.1057797434326413" izz="0.054310757474580806" ixy="0.0" iyz="0.0" ixz="1.1102230246251565e-16" />
         </inertial>
-        <visual name="Actuator-3_visual">
+        <visual name="actuator_front_right_visual">
             <origin xyz="0.0 7.105427357601002e-17 0.23999999999999985" rpy="3.141592653589793 -0.0 0.0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-3.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_front_right.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
             </material>
         </visual>
-        <collision name="Actuator-3_collision">
+        <collision name="actuator_front_right_collision">
             <origin xyz="0.0 7.105427357601002e-17 0.23999999999999985" rpy="3.141592653589793 -0.0 0.0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-3.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_front_right.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-    <link name="Actuator-4">
+    <link name="actuator_front_left">
         <inertial>
             <origin xyz="-1.7763568394002505e-17 -7.105427357601002e-17 0.07768426014187568" rpy="0.0 -0.0 0.0" />
             <mass value="1.077991723221682" />
             <inertia ixx="0.09357165466629214" iyy="0.1057797434326413" izz="0.054310757474580806" ixy="-5.551115123125783e-17" iyz="0.0" ixz="1.1102230246251565e-16" />
         </inertial>
-        <visual name="Actuator-4_visual">
+        <visual name="actuator_front_left_visual">
             <origin xyz="0.0 -7.105427357601002e-17 0.23999999999999985" rpy="3.141592653589793 -0.0 0.0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-4.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_front_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
             </material>
         </visual>
-        <collision name="Actuator-4_collision">
+        <collision name="actuator_front_left_collision">
             <origin xyz="0.0 -7.105427357601002e-17 0.23999999999999985" rpy="3.141592653589793 -0.0 0.0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/Actuator-4.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/actuator_front_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -227,7 +227,7 @@
         <visual name="lower-leg-1_visual">
             <origin xyz="-0.5499084735795644 0.18000000000000033 0.33207360520534585" rpy="1.5707963267948943 -1.5707963267948957 0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-1.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
@@ -236,7 +236,7 @@
         <collision name="lower-leg-1_collision">
             <origin xyz="-0.5499084735795644 0.18000000000000033 0.33207360520534585" rpy="1.5707963267948943 -1.5707963267948957 0" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-1.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -249,7 +249,7 @@
         <visual name="lower-leg-2_visual">
             <origin xyz="-0.5625384205949758 0.17999999999999347 -0.3101979071690065" rpy="-1.5707963267948921 -0.5235987755982989 -3.1415926535897913" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-2.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-2.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
@@ -258,7 +258,7 @@
         <collision name="lower-leg-2_collision">
             <origin xyz="-0.5625384205949758 0.17999999999999347 -0.3101979071690065" rpy="-1.5707963267948921 -0.5235987755982989 -3.1415926535897913" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-2.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-2.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -271,7 +271,7 @@
         <visual name="lower-leg-3_visual">
             <origin xyz="0.33207360520535056 0.17999999999999594 0.5499084735795655" rpy="1.5707963267948968 3.683442676833602e-15 -5.4696434248321024e-15" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-3.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-3.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
@@ -280,7 +280,7 @@
         <collision name="lower-leg-3_collision">
             <origin xyz="0.33207360520535056 0.17999999999999594 0.5499084735795655" rpy="1.5707963267948968 3.683442676833602e-15 -5.4696434248321024e-15" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-3.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-3.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -293,7 +293,7 @@
         <visual name="lower-leg-4_visual">
             <origin xyz="-0.28288228686915 -0.17999999999999727 0.5767580272519269" rpy="1.5707963267949006 -0.08726646259970866 3.1415926535897927" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-4.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-4.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black">
                 <color rgba="0.0 0.0 0.0 1.0" />
@@ -302,97 +302,104 @@
         <collision name="lower-leg-4_collision">
             <origin xyz="-0.28288228686915 -0.17999999999999727 0.5767580272519269" rpy="1.5707963267949006 -0.08726646259970866 3.1415926535897927" />
             <geometry>
-                <mesh filename="/media/rahgirrafi/Technical/Github/ws_qurdo/src/quadro_description/urdf/meshes/lower-leg-4.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find quadro_description)/urdf/meshes/lower-leg-4.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
     <!-- Joints -->
-    <joint name="base_link_to_Base-Body" type="fixed">
+    <joint name="base_link_to_base_body" type="fixed">
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <parent link="base_link" />
-        <child link="Base-Body" />
-        
+        <child link="base_body" />
     </joint>
 
-    <joint name="Base-Body_Revolute-41" type="continuous">
+
+    <joint name="rear_right_joint_1" type="continuous">
         <origin xyz="-0.275 -0.17500000000000002 0.08" rpy="-0.0 -1.5707963267948966 0" />
-        <parent link="Base-Body" />
-        <child link="Actuator-1" />
+        <parent link="base_body" />
+        <child link="actuator_rear_right" />
         <axis xyz="0 0 1" />
         <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="Actuator-1_Revolute-61" type="continuous">
+    <joint name="rear_right_joint_2" type="continuous">
         <origin xyz="0.0 -0.02 0.16" rpy="-1.5707963267948966 1.5707963267948966 0" />
-        <parent link="Actuator-1" />
+        <parent link="actuator_rear_right" />
         <child link="upper-leg-1" />
         <axis xyz="0 0 1" />
         <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="Base-Body_Revolute-62" type="continuous">
-        <origin xyz="-0.275 0.17500000000000002 0.08" rpy="-0.0 -1.5707963267948966 0" />
-        <parent link="Base-Body" />
-        <child link="Actuator-2" />
-        <axis xyz="0 0 1" />
-        <limit effort="99.0" velocity="99.0" />
-    </joint>
-    <joint name="Actuator-2_Revolute-63" type="continuous">
-        <origin xyz="0.0 0.02 0.16" rpy="1.5707963267948966 1.5707963267948966 0" />
-        <parent link="Actuator-2" />
-        <child link="upper-leg-2" />
-        <axis xyz="0 0 1" />
-        <limit effort="99.0" velocity="99.0" />
-    </joint>
-    <joint name="Base-Body_Revolute-64" type="continuous">
-        <origin xyz="0.275 -0.17500000000000002 0.08" rpy="-3.141592653589793 -1.5707963267948966 0" />
-        <parent link="Base-Body" />
-        <child link="Actuator-3" />
-        <axis xyz="0 0 1" />
-        <limit effort="99.0" velocity="99.0" />
-    </joint>
-    <joint name="Actuator-3_Revolute-65" type="continuous">
-        <origin xyz="0.0 0.02 0.16" rpy="1.5707963267948966 -1.5707963267948966 0" />
-        <parent link="Actuator-3" />
-        <child link="upper-leg-3" />
-        <axis xyz="0 0 1" />
-        <limit effort="99.0" velocity="99.0" />
-    </joint>
-    <joint name="Base-Body_Revolute-66" type="continuous">
-        <origin xyz="0.275 0.17500000000000002 0.08" rpy="-3.141592653589793 -1.5707963267948966 0" />
-        <parent link="Base-Body" />
-        <child link="Actuator-4" />
-        <axis xyz="0 0 1" />
-        <limit effort="99.0" velocity="99.0" />
-    </joint>
-    <joint name="Actuator-4_Revolute-67" type="continuous">
-        <origin xyz="0.0 -0.02 0.16" rpy="-1.5707963267948966 -1.5707963267948966 0" />
-        <parent link="Actuator-4" />
-        <child link="upper-leg-4" />
-        <axis xyz="0 0 1" />
-        <limit effort="99.0" velocity="99.0" />
-    </joint>
-    <joint name="upper-leg-1_Revolute-68" type="continuous">
+    <joint name="rear_right_joint_3" type="continuous">
         <origin xyz="-0.30165959999999997 0.17748659 -0.06" rpy="-1.5707963267948948 -3.6977854932234934e-32 -6.162975822039155e-33" />
         <parent link="upper-leg-1" />
         <child link="lower-leg-1" />
         <axis xyz="0 1 0" />
         <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="upper-leg-2_Revolute-69" type="continuous">
+
+
+    <joint name="rear_left_joint_1" type="continuous">
+        <origin xyz="-0.275 0.17500000000000002 0.08" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="base_body" />
+        <child link="actuator_rear_left" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
+    </joint>
+    <joint name="rear_left_joint_2" type="continuous">
+        <origin xyz="0.0 0.02 0.16" rpy="1.5707963267948966 1.5707963267948966 0" />
+        <parent link="actuator_rear_left" />
+        <child link="upper-leg-2" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
+    </joint>
+    <joint name="rear_left_joint_3" type="continuous">
         <origin xyz="-0.30453768999999997 -0.17250158 -0.06" rpy="-1.570796326794895 2.4651903288156624e-32 5.97808654737798e-31" />
         <parent link="upper-leg-2" />
         <child link="lower-leg-2" />
         <axis xyz="0 1 0" />
         <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="upper-leg-3_Revolute-70" type="continuous">
+
+
+    <joint name="front_right_joint_1" type="continuous">
+        <origin xyz="0.275 -0.17500000000000002 0.08" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="base_body" />
+        <child link="actuator_front_right" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
+        
+    </joint>
+    <joint name="front_right_joint_2" type="continuous">
+        <origin xyz="0.0 0.02 0.16" rpy="1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="actuator_front_right" />
+        <child link="upper-leg-3" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
+    </joint>
+    <joint name="front_right_joint_3" type="continuous">
         <origin xyz="0.17748659000000003 0.30165959999999997 -0.06" rpy="-1.5707963267948948 -0.0 -5.390029534646783e-31" />
         <parent link="upper-leg-3" />
         <child link="lower-leg-3" />
         <axis xyz="0 1 0" />
         <limit effort="99.0" velocity="99.0" />
     </joint>
-    <joint name="upper-leg-4_Revolute-71" type="continuous">
+
+
+    <joint name="front_left_joint_1" type="continuous">
+        <origin xyz="0.275 0.17500000000000002 0.08" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="base_body" />
+        <child link="actuator_front_left" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
+    </joint>
+    <joint name="front_left_joint_2" type="continuous">
+        <origin xyz="0.0 -0.02 0.16" rpy="-1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="actuator_front_left" />
+        <child link="upper-leg-4" />
+        <axis xyz="0 0 1" />
+        <limit effort="99.0" velocity="99.0" />
+    </joint>
+    <joint name="front_left_joint_3" type="continuous">
         <origin xyz="-0.15051983 -0.31598067 -0.06" rpy="1.5707963267948986 1.3877787807814457e-17 4.930380657631324e-32" />
         <parent link="upper-leg-4" />
         <child link="lower-leg-4" />

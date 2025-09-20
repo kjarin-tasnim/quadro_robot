@@ -3,15 +3,16 @@
 
   <xacro:macro name="quadro_ros2_control" params="name prefix">
 
-    <ros2_control name="quadruped_robot" type="system">
+<ros2_control name="quadruped_robot" type="system">
     <hardware>
         <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
     
-    <joint name="Base-Body_Revolute-41">
+    <joint name="rear_right_joint_1">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
+            <initial_value>0.062832</initial_value>
         </command_interface>
 
         <state_interface name="position"/>
@@ -20,79 +21,94 @@
         
     </joint>
     
-    <joint name="Actuator-1_Revolute-61">
+    <joint name="rear_right_joint_2">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
+            
         </command_interface>
 
-        <state_interface name="position"/>
+        <state_interface name="position">
+            <initial_value>-0.753982</initial_value>
+        </state_interface>
         <state_interface name="velocity"/>
         <state_interface name="effort"/>
     </joint>
     
-    <joint name="Base-Body_Revolute-62">
+    <joint name="rear_right_joint_3">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
+            
         </command_interface>
  
-        <state_interface name="position"/>
+        <state_interface name="position">
+            <initial_value>0.753982</initial_value>
+        </state_interface>
+
         <state_interface name="velocity"/>
         <state_interface name="effort"/>
         <!-- <param name="min">-0.349066</param> -->
         <!-- <param name="max">0.349066</param> -->
     </joint>
     
-    <joint name="Actuator-2_Revolute-63">
+    <joint name="rear_left_joint_1">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
         </command_interface>
 
-        <state_interface name="position"/>
+        <state_interface name="position">
+            <initial_value>-0.125664</initial_value>
+        </state_interface>
         <state_interface name="velocity"/>
         <state_interface name="effort"/>
     </joint>
     
-    <joint name="Base-Body_Revolute-64">
+    <joint name="rear_left_joint_2">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
         </command_interface>
-       
-        <state_interface name="position"/>
+
+        <state_interface name="position">
+            <initial_value>0.565487</initial_value>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+    </joint>
+
+
+    
+    <joint name="rear_left_joint_3">
+        <command_interface name="position">
+            <!-- <param name="min">-0.349066</param> -->
+            <!-- <param name="max">0.349066</param> -->
+        </command_interface>
+
+        <state_interface name="position">
+            <initial_value>-1.193805</initial_value>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+    </joint>
+    
+    <joint name="front_right_joint_1">
+        <command_interface name="position">
+            <!-- <param name="min">-0.349066</param> -->
+            <!-- <param name="max">0.349066</param> -->
+        </command_interface>
+
+        <state_interface name="position">
+            <initial_value>-0.125664</initial_value>
+        </state_interface>
         <state_interface name="velocity"/>
         <state_interface name="effort"/>
         <!-- <param name="min">-0.349066</param> -->
         <!-- <param name="max">0.349066</param> -->
     </joint>
     
-    <joint name="Actuator-3_Revolute-65">
-        <command_interface name="position">
-            <!-- <param name="min">-0.349066</param> -->
-            <!-- <param name="max">0.349066</param> -->
-        </command_interface>
-
-        <state_interface name="position"/>
-        <state_interface name="velocity"/>
-        <state_interface name="effort"/>
-    </joint>
-    
-    <joint name="Base-Body_Revolute-66">
-        <command_interface name="position">
-            <!-- <param name="min">-0.349066</param> -->
-            <!-- <param name="max">0.349066</param> -->
-        </command_interface>
-
-        <state_interface name="position"/>
-        <state_interface name="velocity"/>
-        <state_interface name="effort"/>
-        <!-- <param name="min">-0.349066</param> -->
-        <!-- <param name="max">0.349066</param> -->
-    </joint>
-    
-    <joint name="Actuator-4_Revolute-67">
+    <joint name="front_right_joint_2">
         <command_interface name="position">
             <!-- <param name="min"/>-0.349066</param> -->
             <!-- <param name="max"/>0.349066</param> -->
@@ -103,7 +119,7 @@
         <state_interface name="effort"/>
     </joint>
     
-    <joint name="upper-leg-1_Revolute-68">
+    <joint name="front_right_joint_3">
         <command_interface name="position">
             <!-- <param name="min">-0/.349066</param> -->
             <!-- <param name="max">0./349066</param> -->
@@ -114,7 +130,7 @@
         <state_interface name="effort"/>
     </joint>
     
-    <joint name="upper-leg-2_Revolute-69">
+    <joint name="front_left_joint_1">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
@@ -125,7 +141,7 @@
         <state_interface name="effort"/>
     </joint>
     
-    <joint name="upper-leg-3_Revolute-70">
+    <joint name="front_left_joint_2">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->
@@ -136,7 +152,7 @@
         <state_interface name="effort"/>
     </joint>
     
-    <joint name="upper-leg-4_Revolute-71">
+    <joint name="front_left_joint_3">
         <command_interface name="position">
             <!-- <param name="min">-0.349066</param> -->
             <!-- <param name="max">0.349066</param> -->

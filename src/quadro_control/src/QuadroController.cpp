@@ -120,7 +120,7 @@ int main(int argc, char * argv[])
   // Define all 12 joint names
   std::vector<std::string> joint_names = {
     "Base-Body_Revolute-41",
-    "Actuator-1_Revolute-61",
+    "actuator_rear_right_base_joint",
     "upper-leg-1_Revolute-68",
     "Base-Body_Revolute-62",
     "Actuator-2_Revolute-63",
